@@ -39,7 +39,7 @@ body {
 
 
 .home-link {
-    padding: 10px;
+    padding: 0;
 
     color: black;
     font-size: 18px;
@@ -76,20 +76,22 @@ body {
 main {
     display: flex;
     justify-content: center;
-
-    padding: 40px 16px;
+    padding: 24px 16px;
 }
 
 
 /* Add post card */
 
 .post-card {
-    width: 400px;
-    padding: 40px 45px;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 55px;
 
+    text-align: center;
     background-color: rgba(161, 161, 161, 0.5);
     border-radius: 11px;
 }
+
 
 
 form {
