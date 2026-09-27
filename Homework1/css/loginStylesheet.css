@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    background: gray;
+    background: rgb(126, 124, 124);
     border-radius: 12px 12px 0 0;
 }
 
@@ -58,7 +58,7 @@ main {
     padding: 40px 55px;
 
     text-align: center;
-    background-color: gray;
+    background-color: rgba(161, 161, 161, 0.5);
     border-radius: 11px;
 }
 
@@ -73,8 +73,8 @@ main {
 }
 
 .account-link, .forgot-password {
-    color: lightskyblue;
-    font-size: 16px;
+    color: rgb(39, 154, 226);
+    font-size: 18px;
     text-decoration: none;
 }
 
