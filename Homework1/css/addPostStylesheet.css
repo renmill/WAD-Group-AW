@@ -166,7 +166,7 @@ textarea::placeholder {
 
 
 input[type="file"] {
-    width: 180px;
+    width: 190px;
 
     font: inherit;
     font-size: 12px;
