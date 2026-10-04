@@ -13,8 +13,7 @@
     border-radius: 12px 12px 0 0;
 }
 
-.home-link,
-.add-post {
+.home-link{
     padding: 0;
 
     color: black;
@@ -99,13 +98,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .side-box {
-        display: none;
-    }
-
-    .content {
-        display: block;
-    }
 
     .posts {
         padding: 15px;
