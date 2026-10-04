@@ -23,7 +23,7 @@
 
     border-radius: 5px;
 }
-
+/* Pseudo-class */
 .home-link:hover {
     background-color: rgb(160, 160, 160);
 }
@@ -33,10 +33,98 @@
     height: 40px;
     display: block;
 }
-
+/* Descendant */
 .profile-link img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: contain;
 }
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 30px;
+}
+
+.post {
+    width: 350px;
+    padding: 15px;
+
+    background-color: rgb(210, 210, 210);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(126, 124, 124);
+    border-radius: 0 0 12px 12px;
+}
+
+.post-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-date {
+    margin: 0;
+    font-size: 14px;
+}
+
+.like-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    .side-box {
+        display: none;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .posts {
+        padding: 15px;
+    }
+
+    .post {
+        width: 100%;
+    }
+}
+/* Child */
+.posts > .post {
+    flex-shrink: 0;
+}
+/* Adjacent sibling */
+.post + .post {
+    margin-top: 2px;
+}
+/* General sibling */
+.post ~ .post .post-date {
+    color: rgb(50, 50, 50);
+}
+
