@@ -1,4 +1,4 @@
-name: Deploy Homework1 to GitHub Pages
+name: Deploy website to GitHub Pages
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
       - name: Upload Homework1
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./Homework1
+          path: .
 
       - name: Deploy
         id: deployment
