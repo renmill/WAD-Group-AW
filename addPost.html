@@ -1,78 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Add Post | PostIt</title>
 
-    <link rel="stylesheet" href="css/addPostStylesheet.css">
-</head>
+    <link rel="stylesheet" href="css/addPostStylesheet.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="navbar">
-
-        <nav>
-            <a class="home-link" href="index.html">
-                <strong>Home</strong>
-            </a>
-        </nav>
-
-        <a class="profile-link" href="login.html" aria-label="Profile">
-            <img src="images/profile-img.jpg" alt="Profile">
+      <nav>
+        <a class="home-link" href="index.html">
+          <strong>Home</strong>
         </a>
+      </nav>
 
+      <a class="profile-link" href="login.html" aria-label="Profile">
+        <img src="images/profile-img.jpg" alt="Profile" />
+      </a>
     </header>
 
-
     <main>
+      <section class="post-card">
+        <form action="index.html">
+          <section class="post-body">
+            <label for="post-text"> Post body </label>
 
-        <section class="post-card">
+            <textarea
+              id="post-text"
+              name="post-text"
+              placeholder="textarea"
+            ></textarea>
+          </section>
 
-            <form action="index.html">
+          <section class="file-selection">
+            <label for="post-file"> Select file </label>
 
-                <section class="post-body">
+            <input type="file" id="post-file" name="post-file" />
+          </section>
 
-                    <label for="post-text">
-                        Post body
-                    </label>
-
-                    <textarea
-                        id="post-text"
-                        name="post-text"
-                        placeholder="textarea"
-                    ></textarea>
-
-                </section>
-
-
-                <section class="file-selection">
-
-                    <label for="post-file">
-                        Select file
-                    </label>
-
-                    <input
-                        type="file"
-                        id="post-file"
-                        name="post-file"
-                    >
-
-                </section>
-
-
-                <button type="submit">
-                    Create post
-                </button>
-
-            </form>
-
-        </section>
-
+          <button type="submit">Create post</button>
+        </form>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>

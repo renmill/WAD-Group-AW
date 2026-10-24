@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "author": "Person One",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img.jpg",
+    "text": "Tartu 2024",
+    "image": "images/tartu.jpg.webp",
+    "imageAlt": "A view of Tartu"
+  },
+  {
+    "id": 2,
+    "author": "Person Two",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img.jpg",
+    "text": "My kitty!",
+    "image": "images/kitty.jpg",
+    "imageAlt": "A cute kitty"
+  },
+  {
+    "id": 3,
+    "author": "Person Three",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/dog.jpg",
+    "text": "Dog with a hat",
+    "image": "images/dog.jpg",
+    "imageAlt": "A perky dog wearing a hat"
+  },
+  {
+    "id": 4,
+    "author": "Person Four",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img-2.jpg",
+    "text": "What a beautiful day today!",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 5,
+    "author": "Person Five",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img-3.jpg",
+    "text": "Anyone wants to go and have a coffee?",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 6,
+    "author": "Person Six",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img.jpg",
+    "text": "How is everyone doing today?",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 7,
+    "author": "Person Seven",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img-4.jpg",
+    "text": "Rakvere 2026",
+    "image": "images/cat.jpg",
+    "imageAlt": "Look at what AI made for me!"
+  },
+  {
+    "id": 8,
+    "author": "Person Eight",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img.jpg",
+    "text": "I love fall. Everything is just much prettier.",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 9,
+    "author": "Person Nine",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img-1.jpg",
+    "text": "Making my first post!",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 10,
+    "author": "Person Ten",
+    "createdAt": "2026-10-02T09:00:00+03:00",
+    "avatar": "images/profile-img.jpg",
+    "text": "Look at my baby chickens!",
+    "image": "images/chick.jpg",
+    "imageAlt": "Baby chickens"
+  }
+]

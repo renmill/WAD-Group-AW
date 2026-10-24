@@ -1,81 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script src="js/posts.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index | PostIt</title>
-    <link rel="stylesheet" href="css/indexStylesheet.css">
-</head>
+    <link rel="stylesheet" href="css/indexStylesheet.css" />
+  </head>
 
-<body>
+  <body>
     <header class="navbar">
-        <nav>
-            <a class="home-link" href="index.html">
-                <strong>Home</strong>
-            </a>|
-            <a class="home-link" href="addPost.html">
-                <strong>Add Post</strong>
-            </a>
-        </nav>
-
-
-        <a class="profile-link" href="login.html" aria-label="Profile">
-            <img src="images/profile-img.jpg" alt="Profile">
+      <nav>
+        <a class="home-link" href="index.html"> <strong>Home</strong> </a>|
+        <a class="home-link" href="addPost.html">
+          <strong>Add Post</strong>
         </a>
+      </nav>
+
+      <a class="profile-link" href="login.html" aria-label="Profile">
+        <img src="images/profile-img.jpg" alt="Profile" />
+      </a>
     </header>
 
-        <main class="posts">
-
-        <article class="post">
-            <div class="post-header">
-                <img class="post-profile" src="images/profile-img.jpg" alt="Profile">
-                <p class="post-date">Oct 2, 2026</p>
-            </div>
-            <img class="post-image" src="images/tartu.jpg.webp" alt="Post image">
-
-            <p>Tartu 2026</p>
-            <button class="like-button">👍</button>
-        </article>
-
-        <article class="post">
-            <div class="post-header">
-                <img class="post-profile" src="images/profile-img.jpg" alt="Profile">
-                <p class="post-date">Oct 2, 2026</p>
-            </div>
-            <p>Tartu</p>
-            <button class="like-button">👍</button>
-        </article>
-
-        <article class="post">
-            <div class="post-header">
-                <img class="post-profile" src="images/profile-img.jpg" alt="Profile">
-                <p class="post-date">Oct 2, 2026</p>
-            </div>
-            <p>Nice!</p>
-            <button class="like-button">👍</button>
-        </article>
-
-        <article class="post">
-            <div class="post-header">
-                <img class="post-profile" src="images/profile-img.jpg" alt="Profile">
-                <p class="post-date">Oct 2, 2026</p>
-            </div>
-            <p>Great!</p>
-            <button class="like-button">👍</button>
-        </article>
-
-        <article class="post">
-            <div class="post-header">
-                <img class="post-profile" src="images/profile-img.jpg" alt="Profile">
-                <p class="post-date">Oct 2, 2026</p>
-            </div>
-            <p>Wow!</p>
-            <button class="like-button">👍</button>
-        </article>
-        </main>
-
-    <footer>
-    Footer
-    </footer>
-</body>
+    <main class="posts" , id="posts" aria-busy="true">
+      <p role="status">Loading posts...</p>
+    </main>
+    <footer>Footer</footer>
+  </body>
 </html>
