@@ -58,9 +58,9 @@
     "author": "Person Seven",
     "createdAt": "2026-10-02T09:00:00+03:00",
     "avatar": "images/profile-img-4.jpg",
-    "text": "Rakvere 2026",
+    "text": "Look at what AI made for me!",
     "image": "images/cat.jpg",
-    "imageAlt": "Look at what AI made for me!"
+    "imageAlt": "AI generated image of a cat"
   },
   {
     "id": 8,
