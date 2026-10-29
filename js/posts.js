@@ -11,8 +11,11 @@ async function loadPosts() {
   postsContainer.setAttribute("aria-busy", "true");
 
   try {
-    // "await" pauses function until the response arrives.
-    const response = await fetch("./data/posts.json");
+    // Task 4: fetch from online endpoint
+    // const response = await fetch("https://api.npoint.io/23e23d9543205e32f3b6");
+
+    // Task 5: fetch from local JSON file
+    const response = await fetch("./data/posts.json");    
 
     // A response can arrive even if the file was not found.
     if (!response.ok) {
