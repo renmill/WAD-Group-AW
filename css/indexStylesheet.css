@@ -44,6 +44,10 @@ body {
   width: 40px;
   height: 40px;
   display: block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 /* Descendant */
 .profile-link img {
@@ -150,3 +154,107 @@ footer {
 .post ~ .post .post-date {
   color: rgb(50, 50, 50);
 }
+
+
+/* Profile dropdown menu */
+
+.profile-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 220px;
+  padding: 20px;
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.profile-dropdown[hidden] {
+  display: none;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.profile-email {
+  font-size: 14px;
+  color: gray;
+  margin: 0 0 15px;
+}
+
+.logout-button {
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.logout-button:hover {
+  background-color: #ddd;
+}
+
+
+/* Post card appearance */
+.post {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect on posts */
+.post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Post header layout */
+.post-header {
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Align post date to the right */
+.post-date {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* Improve text readability */
+.post > p {
+  line-height: 1.5;
+}
+
+/* Like button styling */
+.like-button {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.like-button:hover {
+  background-color: #eee;
+}
+
+/* Dropdown border */
+.profile-dropdown {
+  border: 1px solid #ddd;
+}
+
+/* Mobile styling */
+@media (max-width: 500px) {
+  .profile-dropdown {
+    max-width: calc(100vw - 24px);
+  }
+}
+
+

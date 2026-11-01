@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <script src="js/posts.js" defer></script>
+    <script src="js/profileDropdown.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index | PostIt</title>
@@ -17,9 +18,21 @@
         </a>
       </nav>
 
-      <a class="profile-link" href="login.html" aria-label="Profile">
-        <img src="images/profile-img.jpg" alt="Profile" />
-      </a>
+      
+    <div class="profile-container">
+        <button class="profile-link" id="profileButton"
+                type="button" aria-label="Profile menu"
+                aria-expanded="false" aria-controls="profileMenu">
+            <img src="images/profile-img.jpg" alt="Profile">
+        </button>
+
+        <div class="profile-dropdown" id="profileMenu" hidden>
+            <p class="profile-name">John Doe</p>
+            <p class="profile-email">john@example.com</p>
+            <a href="login.html" class="logout-button">Logout</a>
+        </div>
+    </div>
+
     </header>
 
     <main class="posts" , id="posts" aria-busy="true">
