@@ -1,43 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script src="js/posts.js" defer></script>
-    <script src="js/profileDropdown.js" defer></script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index | PostIt</title>
-    <link rel="stylesheet" href="css/indexStylesheet.css" />
+    <meta name="viewport" content="width-device-width" , inital-scale="1.0" />
+
+    <title>PostIt</title>
   </head>
-
   <body>
-    <header class="navbar">
-      <nav>
-        <a class="home-link" href="index.html"> <strong>Home</strong> </a>|
-        <a class="home-link" href="addPost.html">
-          <strong>Add Post</strong>
-        </a>
-      </nav>
-
-      
-    <div class="profile-container">
-        <button class="profile-link" id="profileButton"
-                type="button" aria-label="Profile menu"
-                aria-expanded="false" aria-controls="profileMenu">
-            <img src="images/profile-img.jpg" alt="Profile">
-        </button>
-
-        <div class="profile-dropdown" id="profileMenu" hidden>
-            <p class="profile-name">John Doe</p>
-            <p class="profile-email">john@example.com</p>
-            <a href="login.html" class="logout-button">Logout</a>
-        </div>
-    </div>
-
-    </header>
-
-    <main class="posts" , id="posts" aria-busy="true">
-      <p role="status">Loading posts...</p>
-    </main>
-    <footer>Footer</footer>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

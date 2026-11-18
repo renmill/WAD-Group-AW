@@ -1,0 +1,37 @@
+#app {
+  min-height: calc(100vh - 24px);
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  justify-content: center;
+  padding-inline: 12px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+.posts,
+.signup-page {
+  flex: 1;
+}
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(161, 161, 161, 0.5);
+  border-radius: 11px;
+}
