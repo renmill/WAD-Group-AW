@@ -1,6 +1,7 @@
 # To run the current version:
-cd into the folder: C:/.../WAD-Group-AW
-npm run dev
+1. cd into the folder: C:/.../WAD-Group-AW
+
+2. npm run dev
 
 # WAD Homework Projects
 
