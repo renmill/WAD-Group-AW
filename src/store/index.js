@@ -16,13 +16,33 @@ export default createStore({
       state.status = "loading";
       state.error = "";
     },
+
     loaded(state, posts) {
-      state.posts = posts;
+      state.posts = posts.map((post) => ({
+        ...post,
+        likes: 0,
+      }));
+
       state.status = "loaded";
     },
+
     failed(state, message) {
       state.status = "error";
       state.error = message;
+    },
+
+    incrementLike(state, id) {
+      const post = state.posts.find((post) => post.id === id);
+
+      if (post) {
+        post.likes++;
+      }
+    },
+
+    resetLikes(state) {
+      state.posts.forEach((post) => {
+      post.likes = 0;
+      });
     },
   },
 

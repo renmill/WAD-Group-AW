@@ -19,19 +19,83 @@
   flex: 1;
 }
 
+
+/* SIGNUP PAGE */
+
 .signup-page {
   display: flex;
   justify-content: center;
-  padding: 24px 16px;
+  align-items: flex-start;
+  padding: 40px 20px;
 }
 
 .signup-card {
-  width: 100%;
-  max-width: 400px;
-  padding: 32px;
+  width: 320px;
+  padding: 18px 22px;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: rgba(161, 161, 161, 0.5);
-  border-radius: 11px;
+
+  background-color: #eef6df;
+  border-radius: 12px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-row label {
+  width: 80px;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.form-row input {
+  width: 140px;
+  padding: 7px 10px;
+
+  font-size: 16px;
+
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.signup-card button {
+  align-self: center;
+
+  padding: 5px 18px;
+
+  font-size: 15px;
+
+  background-color: #7da9e8;
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.signup-card button:hover {
+  background-color: #6b99dc;
+}
+
+
+/* RESET LIKES */
+
+.reset-likes-button {
+  display: block;
+  margin: 12px auto;
+  padding: 8px 14px;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reset-likes-button:hover {
+  background-color: #ddd;
 }

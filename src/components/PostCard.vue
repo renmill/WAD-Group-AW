@@ -12,6 +12,11 @@ const store = useStore();
 const post = computed(() => store.getters.postById(props.id));
 // JSON paths look like "images/kitty.jpg". Add Vite's base path
 // so those images work on GitHub Pages as well as locally.
+
+const likePost = () => {
+  store.commit("incrementLike", props.id);
+};
+
 const assetUrl = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
@@ -44,6 +49,7 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
     />
 
     <p>{{ post.text }}</p>
-    <button class="like-button" type="button" disabled>👍</button>
+    <button class="like-button" type="button" @click="likePost">👍 {{ post.likes }}</button>
+    
   </article>
 </template>
